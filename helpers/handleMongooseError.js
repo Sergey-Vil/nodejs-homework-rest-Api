@@ -1,5 +1,3 @@
-// const { log } = require("console");
-
 const handleMongooseError = (error, data, next) => {
   const { name, code } = error;
 
