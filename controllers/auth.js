@@ -9,7 +9,8 @@ const { v4: uuidv4 } = require("uuid");
 const { ctrlWrapper } = require("../utils");
 const User = require("../models/user");
 const HttpError = require("../helpers/HttpError");
-const sendEmail = require("../helpers/sendEmail");
+// const sendEmail = require("../helpers/sendEmail");
+const sendEmail = require("../helpers/nodemailer");
 
 const avatarDir = path.join(__dirname, "../", "public", "avatars");
 
