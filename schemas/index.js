@@ -1,6 +1,6 @@
 const { addSchema, updateSchema, updateFavoriteSchema } = require("./contacts");
 
-const { registerSchema, loginSchema } = require("./user");
+const { registerSchema, loginSchema, verifySchema } = require("./user");
 
 module.exports = {
   addSchema,
@@ -8,4 +8,5 @@ module.exports = {
   updateFavoriteSchema,
   registerSchema,
   loginSchema,
+  verifySchema,
 };

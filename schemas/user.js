@@ -21,5 +21,10 @@ const loginSchema = Joi.object({
     message: `validation failed: password is invalid`,
   }),
 });
+const verifySchema = Joi.object({
+  email: Joi.string().pattern(emailRegexp).required().messages({
+    message: `Missing required email field`,
+  }),
+});
 
-module.exports = { registerSchema, loginSchema };
+module.exports = { registerSchema, loginSchema, verifySchema };
